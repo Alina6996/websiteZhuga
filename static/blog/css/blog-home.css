@@ -1,0 +1,50 @@
+/*!
+ * Start Bootstrap - Blog Home (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* Галерея поста */
+.post-gallery {
+    display: flex;
+    flex-wrap: wrap;       /* фотографии переносятся на новую строку */
+    gap: 15px;             /* расстояние между фото */
+    margin-top: 20px;
+    justify-content: center; /* по центру */
+}
+
+.gallery-item {
+    flex: 1 1 200px;       /* минимальная ширина фото 200px */
+    max-width: 250px;      /* максимальная ширина фото */
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* небольшое увеличение при наведении */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.gallery-img {
+    width: 100%;          /* фото под размер контейнера */
+    height: auto;
+    border-radius: 5px;
+}
+
+.caption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
